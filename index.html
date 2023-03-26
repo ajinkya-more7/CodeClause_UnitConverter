@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Unit Converter</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<h1>Unit Converter</h1>
+	<form>
+		<label for="value">Value:</label>
+		<input type="number" id="value" name="value" required>
+		<label for="category">Category:</label>
+		<select id="category" name="category">
+			<option value="length">Length</option>
+			<option value="weight">Weight</option>
+			<option value="volume">Volume</option>
+		</select>
+		<label for="from">From:</label>
+		<select id="from" name="from">
+			<!-- Length Units -->
+			<option value="meters">Meters</option>
+			<option value="feet">Feet</option>
+			<option value="inches">Inches</option>
+			<option value="centimeters">Centimeters</option>
+			<option value="kilometers">Kilometers</option>
+			<option value="miles">Miles</option>
+			<!-- Weight Units -->
+			<option value="kilograms">Kilograms</option>
+			<option value="pounds">Pounds</option>
+			<option value="ounces">Ounces</option>
+			<option value="grams">Grams</option>
+			<option value="stones">Stones</option>
+			<!-- Volume Units -->
+			<option value="liters">Liters</option>
+			<option value="gallons">Gallons</option>
+			<option value="fluidounces">Fluid Ounces</option>
+			<option value="milliliters">Milliliters</option>
+			<option value="cubicmeters">Cubic Meters</option>
+		</select>
+		<label for="to">To:</label>
+		<select id="to" name="to">
+			<!-- Length Units -->
+			<option value="meters">Meters</option>
+			<option value="feet">Feet</option>
+			<option value="inches">Inches</option>
+			<option value="centimeters">Centimeters</option>
+			<option value="kilometers">Kilometers</option>
+			<option value="miles">Miles</option>
+			<!-- Weight Units -->
+			<option value="kilograms">Kilograms</option>
+			<option value="pounds">Pounds</option>
+			<option value="ounces">Ounces</option>
+			<option value="grams">Grams</option>
+			<option value="stones">Stones</option>
+			<!-- Volume Units -->
+			<option value="liters">Liters</option>
+			<option value="gallons">Gallons</option>
+			<option value="fluidounces">Fluid Ounces</option>
+			<option value="milliliters">Milliliters</option>
+			<option value="cubicmeters">Cubic Meters</option>
+		</select>
+	    <button type="submit">Convert</button>
+        <form onsubmit="return false;">
+            <label for="value">Value:</label>
+        </form>
+        <div id="result"></div>
+        <script src="main.js"></script>
+	</form>
+</body>
+    
